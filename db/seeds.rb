@@ -6,7 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 5.times do
+  Topic.create(
+    topic: "Random"
+    )
   Task.create(
+    topic_id: rand(1..5),
     task: "Hello?",
     count: rand(1..25)
     )

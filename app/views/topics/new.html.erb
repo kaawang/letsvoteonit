@@ -1,0 +1,11 @@
+<%= form_for :topic, url: topics_path do |f| %>
+  <p>
+    <%= f.label "What's the topic?" %><br>
+    <%= f.text_field :topic %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', topics_path %>

@@ -1,0 +1,5 @@
+<%= link_to 'New Topic', new_topic_path %>
+
+<% @topics.each do |t| %>
+  <li><a href='/topics/<%= t.id %>'><%= t.topic %></a></li>
+<% end %>
